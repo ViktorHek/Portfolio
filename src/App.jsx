@@ -1,7 +1,7 @@
 import React from "react"
 import Home from "./components/pages/home/Home"
 import Header from "./components/header/Header"
-import Footer from "./components/footer/Footer"
+// import Footer from "./components/footer/Footer"
 import Who from "./components/pages/who/Who"
 import Why from "./components/pages/why/Why"
 import How from "./components/pages/how/How"
@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/how" component={How}></Route>
           <Home />
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   )

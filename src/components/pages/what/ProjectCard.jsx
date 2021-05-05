@@ -2,14 +2,14 @@ import React from 'react'
 
 const ProjectCard = ({project}) => {
   return (
-    <li>
+    <ui>
       <h4>{project.name}</h4>
       <p>{project.description}</p>
-      <img src="/images/linkimg.png" alt="Link">
+      <i class="fas fa-link">
         {project.link}
-      </img>
+      </i>
       <p>{project.language}</p>
-    </li>
+    </ui>
   )
 }
 

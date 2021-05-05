@@ -1,9 +1,10 @@
 import React from 'react'
 import './Who.css'
+import '../GlobalPageStyle.css'
 
 const Who = () => {
   return (
-    <div>
+    <div className="main_page_container">
       <h1>this is the Who page</h1>
     </div>
   )

@@ -1,3 +1,14 @@
 .projects_container {
   display: flex;
 }
+
+.project_image {
+  height: 30px;
+}
+
+.project_image_button {
+  background-color: #EAE7DC;
+  border: solid 1px;
+  height: 30px;
+  width: 30px;
+}

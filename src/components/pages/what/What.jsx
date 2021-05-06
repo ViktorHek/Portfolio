@@ -1,5 +1,4 @@
 import React from 'react'
-import './What.css'
 import '../GlobalPageStyle.css'
 import ProjectCard from './ProjectCard'
 import Data from './projects'

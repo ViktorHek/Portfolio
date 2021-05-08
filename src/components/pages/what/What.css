@@ -1,16 +1,22 @@
-.project_container {
+/* .project_container {
   display: grid;
   grid-template-columns: repeat(5, auto);
+} */
+
+.main_card_container {
+  display: table;
+  border: 3px solid;
+  width: 350px;
+  height: 790;
+  background: red;
+  justify-content: center;
+  /* flex-direction: row; */
 }
 
 .projectList_container {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  /* grid-template-columns: repeat(5, auto); */
+  background: blue;
 }
 
 .project_image {

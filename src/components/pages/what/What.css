@@ -1,5 +1,16 @@
-.projects_container {
-  display: flex;
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.projectList_container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
 }
 
 .project_image {
@@ -11,4 +22,5 @@
   border: solid 1px;
   height: 30px;
   width: 30px;
+  cursor: pointer;
 }

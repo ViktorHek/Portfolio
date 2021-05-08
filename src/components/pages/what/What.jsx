@@ -15,9 +15,9 @@ const What = () => {
   return (
     <div className="main_page_container">
       <h1>this is the What page</h1>
-      <div className="projects_container">
+      <div>
         {projectList ? (
-          <div>{projectList}</div>
+          <div className="projectList_container">{projectList}</div>
         ) : (
           <h1>Sorry, something went wrong</h1>
         )}

@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 function App() {
   return (
     <>
-      <Router>
+      {/* <Router>
         <Header/>
         <Switch>
           <Route exact path="/" component={Home}></Route>
@@ -22,7 +22,14 @@ function App() {
           <Home />
         </Switch>
         <Footer />
-      </Router>
+      </Router> */}
+      <Header/>
+      <Home/>
+      <Who/>
+      <What/>
+      <Why/>
+      <How/>
+      <Footer/>
     </>
   )
 }

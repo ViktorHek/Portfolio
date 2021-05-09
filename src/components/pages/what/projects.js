@@ -17,7 +17,7 @@ const Data = [
   {
     id: 6,
     name: 'Revisarik',
-    description: 'Restaurant webpage',
+    description: 'Restaurant webpage. GitHub name: slowfood_client_team1_october2020',
     language: 'JavaScript & Ruby',
     link: 'https://revisarik.netlify.app/',
   },
@@ -35,24 +35,28 @@ const Data = [
     description:
       'A mobile-application where the user can share music. Imagine InstaGram but with music',
     language: 'JavaScript & Ruby',
+    link: 'https://github.com/ViktorHek/tuneshare_client',
   },
   {
     id: 4,
     name: 'Kitty News Admin',
     description: 'A Full Stack news webpage. Admin/Journalist Interface',
     language: 'JavaScript & Ruby',
+    link: 'https://github.com/ViktorHek/kitty_news_client_admin_extra',
   },
   {
     id: 5,
     name: 'Kitty News User Mobile',
     description: 'A Full Stack news webpage. User Interface Mobile application',
     language: 'JavaScript & Ruby',
+    link: 'https://github.com/ViktorHek/kitty_news_client_mobile',
   },
   {
     id: 8,
     name: 'Rock Paper Scissor',
     description: 'Rock, paper & Scissor game: Pokemon Edition',
     language: 'JavaScript',
+    link: 'https://github.com/ViktorHek/rock_paper_scissor_game',
   },
 ]
 

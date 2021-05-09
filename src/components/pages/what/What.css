@@ -4,19 +4,32 @@
 } */
 
 .main_card_container {
-  display: table;
-  border: 3px solid;
-  width: 350px;
-  height: 790;
-  background: red;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid; */
+  width: 300px;
+  height: 170px;
+  background-color: #8E8D8A;
   justify-content: center;
-  /* flex-direction: row; */
+  padding: 7px;
+  margin-top: 50px;
 }
 
 .projectList_container {
-  justify-content: center;
-  /* grid-template-columns: repeat(5, auto); */
-  background: blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-rows: auto; */
+  /* justify-content: flex-start; */
+  grid-template-rows: repeat(5, auto);
+  /* background: blue; */
+  /* border: 2px solid black; */
+  justify-content: space-between;
+  height: 500px;
+  width: 1300px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .project_image {
@@ -24,8 +37,8 @@
 }
 
 .project_button {
-  background-color: #EAE7DC;
-  border: solid 1px;
+  background-color: #8E8D8A;
+  border: none;
   height: 30px;
   width: 30px;
   cursor: pointer;

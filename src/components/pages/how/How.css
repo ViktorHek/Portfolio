@@ -1,4 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
+.main_how_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  background-color: #D8C3A5;
+  color: #8E8D8A;
+}
+
+.how_link_container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.how_link {
+  cursor: pointer;
+}
+
+.how_link:hover {
+  color: #E98074;
 }

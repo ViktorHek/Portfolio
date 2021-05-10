@@ -12,12 +12,18 @@ const Home = () => {
           className="home_background_image"
         />
         <div className="home_intro_container">
-          <h1 className="home_title">Hey Checkout My Page</h1>
+          <h1 className="home_title">Viktor Karlsson</h1>
+          <h2 className="home_title">Junior Full-Stack Web Developer</h2>
           <br />
           <br />
           <h3 className="home_text">
-            I added a bunch of cool but unnecessary stuff to keep you
-            entertained
+            Check out my webpage. You will find an introduction about me,
+            projects i've done and how to get in contact with me. All artwork
+            like icons and images are made by me, for example the one to the left. Creating my own icons and
+            artwork gives me the exclusive right to everything you see on this
+            page. To create is also fun and increases creativity. You see, I
+            look at coding as problem solving. Everything I do is to work
+            towards beautiful solutions
           </h3>
         </div>
       </div>

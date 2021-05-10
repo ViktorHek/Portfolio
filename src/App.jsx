@@ -1,4 +1,5 @@
 import React from "react"
+import 'normalize.css'
 import Home from "./components/pages/home/Home"
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"

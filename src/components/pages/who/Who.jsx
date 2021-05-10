@@ -4,7 +4,7 @@ import '../GlobalPageStyle.css'
 
 const Who = () => {
   return (
-    <div className="main_page_container">
+    <div className="who_page_container">
       <h1>this is the Who page</h1>
     </div>
   )

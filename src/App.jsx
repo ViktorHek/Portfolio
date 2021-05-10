@@ -6,7 +6,7 @@ import Who from "./components/pages/who/Who"
 import Why from "./components/pages/why/Why"
 import How from "./components/pages/how/How"
 import What from "./components/pages/what/What"
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (

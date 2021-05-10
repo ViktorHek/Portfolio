@@ -1,7 +1,7 @@
-/* .project_container {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-} */
+.main_what_container {
+  background-color: #D8C3A5;
+  top: 0;
+}
 
 .main_card_container {
   display: flex;
@@ -9,10 +9,10 @@
   /* border: 1px solid; */
   width: 300px;
   height: 170px;
-  background-color: #8E8D8A;
+  background-color: #EAE7DC;
   justify-content: center;
   padding: 7px;
-  margin-top: 50px;
+  margin-top: 20px;
   border-radius: 1rem;
 }
 
@@ -43,4 +43,13 @@
   height: 30px;
   width: 30px;
   cursor: pointer;
+}
+
+.what_title {
+  margin: 0px;
+  padding: 20px;
+}
+
+.what_text {
+  padding-left: 20px;
 }

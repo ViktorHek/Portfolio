@@ -1,6 +1,5 @@
 import React from 'react'
 import './Home.css'
-import '../GlobalPageStyle.css'
 
 const Home = () => {
   return (
@@ -18,8 +17,8 @@ const Home = () => {
           <br />
           <h3 className="home_text">
             Check out my webpage. You will find an introduction about me,
-            projects i've done and how to get in contact with me. All artwork
-            like icons and images are made by me, for example the one to the left. Creating my own icons and
+            projects i've done and how to get in contact with me. All artwork,
+            icons and images are made by me, for example the one to the left. Creating my own icons and
             artwork gives me the exclusive right to everything you see on this
             page. To create is also fun and increases creativity. You see, I
             look at coding as problem solving. Everything I do is to work

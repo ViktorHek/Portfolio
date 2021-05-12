@@ -1,0 +1,55 @@
+.main_what_container {
+  background-color: #D8C3A5;
+  top: 0;
+}
+
+.main_card_container {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid; */
+  width: 300px;
+  height: 170px;
+  background-color: #EAE7DC;
+  justify-content: center;
+  padding: 7px;
+  margin-top: 20px;
+  border-radius: 1rem;
+}
+
+.projectList_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-rows: auto; */
+  /* justify-content: flex-start; */
+  grid-template-rows: repeat(5, auto);
+  /* background: blue; */
+  /* border: 2px solid black; */
+  justify-content: space-between;
+  height: 500px;
+  width: 1300px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.project_image {
+  height: 30px;
+}
+
+.project_button {
+  background-color: #8E8D8A;
+  border: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.what_title {
+  margin: 0px;
+  padding: 20px;
+}
+
+.what_text {
+  padding-left: 20px;
+}

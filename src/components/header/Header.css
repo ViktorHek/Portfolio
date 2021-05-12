@@ -22,10 +22,11 @@
   margin-right: 2rem;
 }
 
-.nav_link {
+.nav_Link {
   color: #8E8D8A;
   display: flex;
   align-items: left;
   text-decoration: none;
   height: 100%;
+  cursor: pointer;
 }

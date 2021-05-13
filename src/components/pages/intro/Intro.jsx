@@ -6,7 +6,7 @@ const Intro = () => {
     <div className="mane_intro_page_container">
       <div className="intro_page_container">
         <img
-          src="/images/web_affichbild.jpg"
+          src="/images/kodak_no_fire.png"
           alt="img"
           className="intro_background_image"
         />

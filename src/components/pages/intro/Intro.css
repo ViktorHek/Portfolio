@@ -20,8 +20,9 @@
 }
 
 .intro_background_image {
+  width: 300px;
   object-fit: cover;
-  border: 2px solid rgb(33, 25, 41);
+
 }
 
 .intro_title {

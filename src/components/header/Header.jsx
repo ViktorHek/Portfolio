@@ -3,7 +3,6 @@ import './Header.css'
 import { Link as LinkScroll } from 'react-scroll'
 import { Link as LinkRoute } from 'react-router-dom'
 import { animateScroll } from 'react-scroll'
-// import HamburgerMenu from './HamburgerMenu'
 
 const Header = () => {
   const [isClicked, setIsClicked] = useState(false)
@@ -22,9 +21,14 @@ const Header = () => {
         />
       </LinkRoute>
       <ul className="header_menu_container">
-        <LinkRoute to="/" className="nav_Link">
+        <LinkRoute
+          to="/"
+          className="nav_Link"
+          onClick={() => animateScroll.scrollToTop()}
+        >
           Home
         </LinkRoute>
+
         <LinkScroll
           to="what"
           className="nav_Link"
@@ -56,19 +60,37 @@ const Header = () => {
                 className="Xit_icon"
               />
             </div>
-            <ul className="hamburger_menu_container">
-              <img src="/images/web_affichbild.jpg" alt=" " className="hamburger_background"/>
-              <li>
-                <LinkRoute to="/" className="hamburger_link">
-                  Home
-                </LinkRoute>
-              </li>
-              <li>
-                <LinkRoute to="/why" className="hamburger_link">
-                  Why
-                </LinkRoute>
-              </li>
-            </ul>
+            <div className="hamburger_menu_container">
+              <ul className="hamburger_links_container">
+                <li>
+                  <LinkRoute
+                    to="/"
+                    className="hamburger_link"
+                    onClick={closeHamburger}
+                  >
+                    Home
+                  </LinkRoute>
+                </li>
+                <li>
+                  <LinkRoute
+                    to="/why"
+                    className="hamburger_link"
+                    onClick={closeHamburger}
+                  >
+                    Why
+                  </LinkRoute>
+                </li>
+                <li>
+                  <LinkRoute
+                    to="/why"
+                    className="hamburger_link"
+                    onClick={closeHamburger}
+                  >
+                    Something
+                  </LinkRoute>
+                </li>
+              </ul>
+            </div>
           </>
         ) : (
           <img

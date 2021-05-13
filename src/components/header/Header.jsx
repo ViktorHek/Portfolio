@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import { Link as LinkScroll } from 'react-scroll'
+import {Link as LinkRoute} from 'react-router-dom'
 import { animateScroll } from 'react-scroll'
 
 const Header = () => {
@@ -13,9 +14,9 @@ const Header = () => {
         onClick={() => animateScroll.scrollToTop()}
       />
       <ul className="header_menu_container">
-        <LinkScroll to="#" className="nav_Link" smooth>
+        <LinkRoute to="/" className="nav_Link">
           Home
-        </LinkScroll>
+        </LinkRoute>
         <LinkScroll
           to="what"
           className="nav_Link"
@@ -27,7 +28,7 @@ const Header = () => {
         <LinkScroll to="who" className="nav_Link" smooth={true} duration={1000}>
           Who
         </LinkScroll>
-        {/* <LinkScroll to="why" className="nav_Link">Why</LinkScroll> */}
+        <LinkRoute to="/why" className="nav_Link">Why</LinkRoute>
         <LinkScroll to="how" className="nav_Link" smooth={true} duration={1000}>
           How
         </LinkScroll>

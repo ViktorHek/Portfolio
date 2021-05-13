@@ -1,21 +1,21 @@
 import React from 'react'
-import './Home.css'
+import './Intro.css'
 
-const Home = () => {
+const Intro = () => {
   return (
-    <div className="main_page_container">
-      <div className="home_page_container">
+    <div className="mane_intro_page_container">
+      <div className="intro_page_container">
         <img
           src="/images/web_affichbild.jpg"
           alt="img"
-          className="home_background_image"
+          className="intro_background_image"
         />
-        <div className="home_intro_container">
-          <h1 className="home_title">Viktor Karlsson</h1>
-          <h2 className="home_title">Junior Full-Stack Web Developer</h2>
+        <div className="intro_text_container">
+          <h1 className="intro_title">Viktor Karlsson</h1>
+          <h2 className="intro_title">Junior Full-Stack Web Developer</h2>
           <br />
           <br />
-          <h3 className="home_text">
+          <h3 className="intro_text">
             Check out my webpage. You will find an introduction about me,
             projects i've done and how to get in contact with me. All artwork,
             icons and images are made by me, for example the one to the left.
@@ -30,4 +30,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Intro

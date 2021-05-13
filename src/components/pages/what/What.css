@@ -1,6 +1,6 @@
 .main_what_container {
   background-color: #D8C3A5;
-  top: 0;
+  /* top: 0; */
 }
 
 .main_card_container {
@@ -11,7 +11,7 @@
   height: 170px;
   background-color: #EAE7DC;
   justify-content: center;
-  padding: 7px;
+  padding: 10px;
   margin-top: 20px;
   border-radius: 1rem;
 }
@@ -38,7 +38,7 @@
 }
 
 .project_button {
-  background-color: #8E8D8A;
+  background-color: #EAE7DC;
   border: none;
   height: 30px;
   width: 30px;
@@ -47,7 +47,6 @@
 
 .what_title {
   margin: 0px;
-  padding: 20px;
 }
 
 .what_text {

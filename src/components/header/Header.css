@@ -10,6 +10,12 @@
   z-index: 999;
 }
 
+.header_img {
+  height: 70px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
 .header_menu_container {
   background: #D8C3A5;
   display: grid;

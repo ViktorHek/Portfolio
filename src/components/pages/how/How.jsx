@@ -4,7 +4,7 @@ import '../GlobalPageStyle.css'
 
 const How = () => {
   return (
-    <div className="main_how_container">
+    <div className="main_how_container" id="how">
       <div className="how_contact_container">
         <h1>Contact</h1>
         <div className="contact_info">

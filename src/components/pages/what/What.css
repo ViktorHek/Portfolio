@@ -1,6 +1,6 @@
 .main_what_container {
-  background-color: #D8C3A5;
-  /* top: 0; */
+  background-color: #d8c3a5;
+  height: 100vh;
 }
 
 .main_card_container {
@@ -8,11 +8,11 @@
   flex-direction: column;
   /* border: 1px solid; */
   width: 300px;
-  height: 170px;
-  background-color: #EAE7DC;
+  height: 190px;
+  background-color: #eae7dc;
   justify-content: center;
-  padding: 10px;
   margin-top: 20px;
+  border: 2px solid black;
   border-radius: 1rem;
 }
 
@@ -23,32 +23,57 @@
   /* display: grid;
   grid-template-rows: auto; */
   /* justify-content: flex-start; */
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(4, auto);
   /* background: blue; */
   /* border: 2px solid black; */
   justify-content: space-between;
-  height: 500px;
+  height: 300px;
   width: 1300px;
-  margin-left: 70px;
-  margin-right: 70px;
+  /* margin-left: 70px;
+  margin-right: 70px; */
+}
+
+.what_title {
+  padding-top: 40px;
+  margin-left: 20px;
+}
+
+.what_text {
+  padding-left: 20px;
+}
+
+.card_container {
+  padding: 10px;
+  margin: 0px;
+}
+
+.project_title {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.project_description {
+  margin: 0px;
+  padding: 0px;
 }
 
 .project_image {
   height: 30px;
+  width: 30px;
 }
 
 .project_button {
-  background-color: #EAE7DC;
+  background-color: #eae7dc;
   border: none;
   height: 30px;
   width: 30px;
   cursor: pointer;
 }
 
-.what_title {
-  margin: 0px;
-}
-
-.what_text {
-  padding-left: 20px;
+.project_language {
+  position: sticky;
+  align-self: flex-end;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }

@@ -1,35 +1,24 @@
-import React from "react"
+import React from 'react'
 import 'normalize.css'
-import Home from "./components/pages/home/Home"
-import Header from "./components/header/Header"
-import Who from "./components/pages/who/Who"
-// import Why from "./components/pages/why/Why"
-import How from "./components/pages/how/How"
-import What from "./components/pages/what/What"
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Home from './components/pages/Home'
+import Header from './components/header/Header'
+import Why from './components/pages/why/Why'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
     <>
-      {/* <Router>
-        <Header/>
+      <Router>
+        <Header />
         <Switch>
           <Route exact path="/" component={Home}></Route>
-          <Route exact path="/who" component={Who}></Route>
-          <Route exact path="/what" component={What}></Route>
           <Route exact path="/why" component={Why}></Route>
-          <Route exact path="/how" component={How}></Route>
-          <Home />
         </Switch>
-      </Router> */}
-      <Header/>
-      <Home/>
-      <What/>
-      <Who/>
-      {/* <Why/> */}
-      <How/>
+      </Router>
+      {/* <Header/>
+      <Home/> */}
     </>
   )
 }
 
-export default App;
+export default App

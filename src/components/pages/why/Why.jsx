@@ -4,7 +4,7 @@ import '../GlobalPageStyle.css'
 
 const Why = () => {
   return (
-    <div className="main_page_container">
+    <div className="why_page_container">
       <h1>this is the Why page</h1>
     </div>
   )

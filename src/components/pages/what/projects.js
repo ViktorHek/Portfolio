@@ -53,8 +53,8 @@ const Data = [
   },
   {
     id: 8,
-    name: 'Rock Paper Scissor',
-    description: 'Rock, paper & Scissor game: Pokemon Edition',
+    name: 'Netflix Clone',
+    description: 'A replica of netflix, code along by Karl Hadwen (link in repo)',
     language: 'JavaScript',
     link: 'https://github.com/ViktorHek/rock_paper_scissor_game',
   },

@@ -1,15 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Header.css'
 import { Link as LinkScroll } from 'react-scroll'
 import { Link as LinkRoute } from 'react-router-dom'
 import { animateScroll } from 'react-scroll'
+import HamburgerMenu from './HamburgerMenu'
 
 const Header = () => {
-  const [isClicked, setIsClicked] = useState(false)
-
-  const hamburgerToggle = () => setIsClicked(!isClicked)
-  const closeHamburger = () => setIsClicked(false)
-
   return (
     <nav className="main_header_container">
       <LinkRoute to="/">
@@ -44,62 +40,7 @@ const Header = () => {
           How
         </LinkScroll>
       </ul>
-      <div
-        className={
-          isClicked ? 'hamburger_menu_container_active' : 'hamburger_container'
-        }
-        onClick={hamburgerToggle}
-      >
-        {isClicked ? (
-          <>
-            <div className="Xit_icon_container">
-              <img
-                src="images/Xit.png"
-                alt="Exit"
-                onClick={closeHamburger}
-                className="Xit_icon"
-              />
-            </div>
-            <div className="hamburger_menu_container">
-              <ul className="hamburger_links_container">
-                <li>
-                  <LinkRoute
-                    to="/"
-                    className="hamburger_link"
-                    onClick={closeHamburger}
-                  >
-                    Home
-                  </LinkRoute>
-                </li>
-                <li>
-                  <LinkRoute
-                    to="/why"
-                    className="hamburger_link"
-                    onClick={closeHamburger}
-                  >
-                    Why
-                  </LinkRoute>
-                </li>
-                <li>
-                  <LinkRoute
-                    to="/why"
-                    className="hamburger_link"
-                    onClick={closeHamburger}
-                  >
-                    Something
-                  </LinkRoute>
-                </li>
-              </ul>
-            </div>
-          </>
-        ) : (
-          <img
-            src="images/hamburger_menu_border_new.png"
-            alt="Menu"
-            className="hamburger_img"
-          />
-        )}
-      </div>
+      <HamburgerMenu />
     </nav>
   )
 }

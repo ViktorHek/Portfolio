@@ -20,9 +20,9 @@
 }
 
 .intro_background_image {
+  height: 400px;
   width: 300px;
   object-fit: cover;
-
 }
 
 .intro_title {

@@ -40,7 +40,7 @@ const Header = () => {
           How
         </LinkScroll>
       </ul>
-      <HamburgerMenu />
+      {/* <HamburgerMenu /> */}
     </nav>
   )
 }

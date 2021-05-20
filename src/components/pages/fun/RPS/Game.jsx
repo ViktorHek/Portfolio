@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import DisplayPlayer from './DisplayPlayer'
 import './RPS.css'
 
-const pokemons = ['fire', 'water', 'grass', 'starter']
+const dudes = ['rock', 'paper', 'scissor', 'starter']
 class Game extends Component {
   state = {
-    player: pokemons[3],
-    computer: pokemons[3],
+    player: dudes[3],
+    computer: dudes[3],
     winner: '',
   }
 
@@ -15,7 +15,7 @@ class Game extends Component {
     let interval = setInterval(() => {
       count++
       this.setState({
-        computer: pokemons[Math.floor(window.Math.random() * 3)],
+        computer: dudes[Math.floor(window.Math.random() * 3)],
         winner: '',
       })
       if (count > 5) {
@@ -30,46 +30,52 @@ class Game extends Component {
   champion = () => {
     const { player, computer } = this.state
     if (
-      (player === 'fire' && computer === 'grass') ||
-      (player === 'grass' && computer === 'water') ||
-      (player === 'water' && computer === 'fire')
+      (player === 'rock' && computer === 'scissor') ||
+      (player === 'scissor' && computer === 'paper') ||
+      (player === 'paper' && computer === 'rock')
     ) {
-      return 'You are the Champion'
+      return 'YOU WIN'
     } else if (player === computer) {
-      return "Pokemons don't fight there friends"
+      return "Friends don't fight friends"
     } else {
       return 'You lose!'
     }
   }
 
-  choosePokemon = (pokemon) => {
+  chooseDude = (dude) => {
     this.setState({
-      player: pokemon,
+      player: dude,
     })
   }
 
   render() {
     const { player, computer, winner } = this.state
     return (
-      <div className="game-container">
-        <h1>Rock Paper Scissor. pokemon edition!</h1>
+      <div className="game_container">
+        <h1>Rock Paper Scissor. Special</h1>
+        <h3>
+          This game is similar to Rock, Paper, Scissor, but with a twist!
+          Instead of the normal characters you will be choosing between Bob,
+          Fred and Kody. One of them is smart, the other one is strong and the
+          last one is cunning. The smart one outsmarts the cunning one. The
+          cunning one will cheat and win over the strong one. The strong one
+          will knock out the smart one. the only problem is, I don't know who is
+          the strong, smart och cunning one.
+        </h3>
         <div id="playerSelection" className="player_display">
-          <DisplayPlayer pokemon={player} />
-          <DisplayPlayer pokemon={computer} />
+          <DisplayPlayer dude={player} />
+          <DisplayPlayer dude={computer} />
         </div>
-        <div class="selection">
-          <button onClick={() => this.choosePokemon('fire')}>
-            Choose Fire
-          </button>
-          <button onClick={() => this.choosePokemon('water')}>Wather</button>
-          <button onClick={() => this.choosePokemon('grass')}>grass</button>
-        </div>
+        <div className="button_container">
+          <div className="select_button_container">
+            <button onClick={() => this.chooseDude('rock')}>Bob</button>
+            <button onClick={() => this.chooseDude('paper')}>Fred</button>
+            <button onClick={() => this.chooseDude('scissor')}>Kody</button>
+          </div>
+          <button onClick={this.startFight} className="fight_btn">Fight!</button>
 
-        <div className="winner" data-cy="winner">
-          {winner && this.champion()}
+          <div className="winner">{winner && this.champion()}</div>
         </div>
-
-        <button onClick={this.startFight}>Fight!</button>
       </div>
     )
   }

@@ -1,9 +1,10 @@
 import React from 'react'
 import Game from './RPS/Game'
+import './Fun.css'
 
 const Fun = () => {
   return (
-    <div>
+    <div className="mane_fun_page_container">
       <h1>
         I like to have fun. Hope you do to. I want this page to be more then
         just a presentation of me but also a place you can stay an have fun.

@@ -1,16 +1,15 @@
 import React from 'react'
 import './RPS.css'
 
-
-const DisplayPlayer = ({ pokemon }) => {
+const DisplayPlayer = ({ dude }) => {
   return (
     <div className="player">
       <img className="player-img"
-        src={pokemon === 'fire'
+        src={dude === 'rock'
           ? '/images/bob_grill.png'
-          : pokemon === 'water'
+          : dude === 'paper'
           ? '/images/fred.png'
-          : pokemon === 'grass'
+          : dude === 'scissor'
           ? '/images/fat_RPS.png'
           : '/images/flower.png'} alt="PLAYER"
       />

@@ -1,0 +1,15 @@
+.game-container {
+  padding: 10px;
+}
+
+.player-img {
+  height: 400px;
+  width: 400px;
+}
+
+.player_display {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}

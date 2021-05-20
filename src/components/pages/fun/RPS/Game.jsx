@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import DisplayPlayer from './DisplayPlayer'
+import './RPS.css'
 
 const pokemons = ['fire', 'water', 'grass', 'starter']
 class Game extends Component {
@@ -50,10 +51,9 @@ class Game extends Component {
   render() {
     const { player, computer, winner } = this.state
     return (
-      <div className="hero-container">
-        <video src="./video.mp4" autoPlay loop muted />
+      <div className="game-container">
         <h1>Rock Paper Scissor. pokemon edition!</h1>
-        <div id="playerSelection">
+        <div id="playerSelection" className="player_display">
           <DisplayPlayer pokemon={player} />
           <DisplayPlayer pokemon={computer} />
         </div>

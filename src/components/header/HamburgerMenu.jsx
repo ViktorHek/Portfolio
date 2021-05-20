@@ -45,7 +45,7 @@ const HamburgerMenu = () => {
                   CV
                 </LinkRoute>
               </li>
-              <li>
+              {/* <li>
                 <LinkRoute
                   to="/CV"
                   className="hamburger_link"
@@ -53,7 +53,7 @@ const HamburgerMenu = () => {
                 >
                   Something
                 </LinkRoute>
-              </li>
+              </li> */}
             </ul>
           </div>
         </>

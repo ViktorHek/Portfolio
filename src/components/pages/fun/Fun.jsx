@@ -1,4 +1,5 @@
 import React from 'react'
+import Game from './RPS/Game'
 
 const Fun = () => {
   return (
@@ -8,6 +9,7 @@ const Fun = () => {
         just a presentation of me but also a place you can stay an have fun.
       </h1>
       <h3>At the moment I can only offer you a rock, paper, scissor game</h3>
+      <Game />
     </div>
   )
 }

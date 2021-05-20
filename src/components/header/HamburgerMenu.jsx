@@ -38,22 +38,22 @@ const HamburgerMenu = () => {
               </li>
               <li>
                 <LinkRoute
-                  to="/why"
+                  to="/CV"
                   className="hamburger_link"
                   onClick={closeHamburger}
                 >
-                  Why
+                  CV
                 </LinkRoute>
               </li>
-              <li>
+              {/* <li>
                 <LinkRoute
-                  to="/why"
+                  to="/CV"
                   className="hamburger_link"
                   onClick={closeHamburger}
                 >
                   Something
                 </LinkRoute>
-              </li>
+              </li> */}
             </ul>
           </div>
         </>

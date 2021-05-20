@@ -41,6 +41,7 @@
 .hamburger_img {
   height: 60px;
   padding-right: 20px;
+  cursor: pointer;
 }
 
 .hamburger_menu_container {

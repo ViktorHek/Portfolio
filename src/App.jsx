@@ -2,7 +2,7 @@ import React from 'react'
 import 'normalize.css'
 import Home from './components/pages/Home'
 import Header from './components/header/Header'
-import Why from './components/pages/why/Why'
+import CV from './components/pages/CV/CV'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home}></Route>
-          <Route exact path="/why" component={Why}></Route>
+          <Route exact path="/CV" component={CV}></Route>
         </Switch>
       </Router>
       {/* <Header/>

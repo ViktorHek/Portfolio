@@ -45,15 +45,15 @@ const HamburgerMenu = () => {
                   CV
                 </LinkRoute>
               </li>
-              {/* <li>
+              <li>
                 <LinkRoute
-                  to="/CV"
+                  to="/fun"
                   className="hamburger_link"
                   onClick={closeHamburger}
                 >
-                  Something
+                  Fun!
                 </LinkRoute>
-              </li> */}
+              </li>
             </ul>
           </div>
         </>

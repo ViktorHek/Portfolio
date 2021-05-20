@@ -17,8 +17,6 @@ function App() {
           <Route exact path="/fun" component={Fun}></Route>
         </Switch>
       </Router>
-      {/* <Header/>
-      <Home/> */}
     </>
   )
 }
